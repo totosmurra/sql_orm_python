@@ -22,7 +22,7 @@ import sqlite3
 import sqlalchemy
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker, relationship
+from sqlalchemy.orm import session, sessionmaker, relationship
 
 # Crear el motor (engine) de la base de datos
 engine = sqlalchemy.create_engine("sqlite:///secundaria.db")
@@ -96,10 +96,10 @@ def fill():
     alumno3 = Estudiante(name = "Paula", age = 15, grade = 3, tutor = tutor2)
     session.add(alumno3)
     
-    alumno4 = Estudiante(name = "Pablo", age = 16, grade = 4, tutor = tutor1)
+    alumno4 = Estudiante(name = "Paco", age = 16, grade = 4, tutor = tutor1)
     session.add(alumno4)
     
-    alumno5 = Estudiante(name = "Pablo", age = 17, grade = 5, tutor = tutor2)
+    alumno5 = Estudiante(name = "Pepe", age = 17, grade = 5, tutor = tutor2)
     session.add(alumno5)
 
     session.commit()
@@ -156,6 +156,30 @@ def modify(id, nuevo_tutor):
     # TIP: En clase se hizo lo mismo para las nacionalidades con
     # en la función update_persona_nationality
     
+    Session = sessionmaker(bind=engine)
+    session = Session()
+
+    query = session.query(Tutor).filter(Tutor.name == nuevo_tutor)
+    tutor_nuevo = query.first()
+
+
+    query = session.query(Estudiante).filter(Estudiante.id == id)
+    est_tut_new = query.first()
+
+    est_tut_new.tutor = tutor_nuevo
+
+    session.add(est_tut_new)
+    session.commit()
+
+    query = session.query(Estudiante)
+
+    for i in query:
+        print(i)
+    
+
+    print("Estudiante con id {} fue actualizado, el nuevo tutor es {}".format(id, nuevo_tutor))
+
+    
     
 
 
@@ -190,9 +214,9 @@ if __name__ == '__main__':
     tutor = "Alberto"
     search_by_tutor(tutor)
 
-    nuevo_tutor = "Patricia"
+    nuevo_tutor = "Alberto"
     id = 2
-    #modify(id, nuevo_tutor)
+    modify(id, nuevo_tutor)
 
     grade = 2
     count_grade(grade)
