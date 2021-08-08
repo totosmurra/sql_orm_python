@@ -1,0 +1,375 @@
+[
+    {
+        "code": 200,
+        "body": {
+            "id": "MLA845041373",
+            "site_id": "MLA",
+            "title": "Medidor Digital De Energ\u00eda, Voltaje 100a,",
+            "subtitle": null,
+            "seller_id": 78528152,
+            "category_id": "MLA420226",
+            "official_store_id": null,
+            "price": 2900,
+            "base_price": 2900,
+            "original_price": null,
+            "currency_id": "ARS",
+            "initial_quantity": 4,
+            "available_quantity": 0,
+            "sold_quantity": 4,
+            "sale_terms": [
+                {
+                    "id": "WARRANTY_TYPE",
+                    "name": "Tipo de garant\u00eda",
+                    "value_id": "6150835",
+                    "value_name": "Sin garant\u00eda",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "6150835",
+                            "name": "Sin garant\u00eda",
+                            "struct": null
+                        }
+                    ]
+                }
+            ],
+            "buying_mode": "buy_it_now",
+            "listing_type_id": "gold_special",
+            "start_time": "2020-03-22T21:27:57.000Z",
+            "stop_time": "2040-03-17T04:00:00.000Z",
+            "condition": "new",
+            "permalink": "https://articulo.mercadolibre.com.ar/MLA-845041373-medidor-digital-de-energia-voltaje-100a-_JM",
+            "thumbnail_id": "925553-MLA42489911067_072020",
+            "thumbnail": "http://http2.mlstatic.com/D_925553-MLA42489911067_072020-I.jpg",
+            "secure_thumbnail": "https://http2.mlstatic.com/D_925553-MLA42489911067_072020-I.jpg",
+            "pictures": [
+                {
+                    "id": "925553-MLA42489911067_072020",
+                    "url": "http://http2.mlstatic.com/D_925553-MLA42489911067_072020-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_925553-MLA42489911067_072020-O.jpg",
+                    "size": "496x500",
+                    "max_size": "766x772",
+                    "quality": ""
+                },
+                {
+                    "id": "904127-MLA41205801033_032020",
+                    "url": "http://http2.mlstatic.com/D_904127-MLA41205801033_032020-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_904127-MLA41205801033_032020-O.jpg",
+                    "size": "452x500",
+                    "max_size": "700x774",
+                    "quality": ""
+                },
+                {
+                    "id": "727764-MLA41205802017_032020",
+                    "url": "http://http2.mlstatic.com/D_727764-MLA41205802017_032020-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_727764-MLA41205802017_032020-O.jpg",
+                    "size": "500x384",
+                    "max_size": "720x553",
+                    "quality": ""
+                },
+                {
+                    "id": "651890-MLA41205797215_032020",
+                    "url": "http://http2.mlstatic.com/D_651890-MLA41205797215_032020-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_651890-MLA41205797215_032020-O.jpg",
+                    "size": "452x500",
+                    "max_size": "740x817",
+                    "quality": ""
+                },
+                {
+                    "id": "648900-MLA41205787588_032020",
+                    "url": "http://http2.mlstatic.com/D_648900-MLA41205787588_032020-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_648900-MLA41205787588_032020-O.jpg",
+                    "size": "500x403",
+                    "max_size": "718x579",
+                    "quality": ""
+                },
+                {
+                    "id": "646622-MLA41205793351_032020",
+                    "url": "http://http2.mlstatic.com/D_646622-MLA41205793351_032020-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_646622-MLA41205793351_032020-O.jpg",
+                    "size": "500x489",
+                    "max_size": "799x782",
+                    "quality": ""
+                },
+                {
+                    "id": "625237-MLA42489493903_072020",
+                    "url": "http://http2.mlstatic.com/D_625237-MLA42489493903_072020-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_625237-MLA42489493903_072020-O.jpg",
+                    "size": "281x500",
+                    "max_size": "675x1200",
+                    "quality": ""
+                }
+            ],
+            "video_id": null,
+            "descriptions": [
+                {
+                    "id": "MLA845041373-2578720842"
+                }
+            ],
+            "accepts_mercadopago": true,
+            "non_mercado_pago_payment_methods": [],
+            "shipping": {
+                "mode": "me2",
+                "free_methods": [
+                    {
+                        "id": 73328,
+                        "rule": {
+                            "default": true,
+                            "free_mode": "country",
+                            "free_shipping_flag": true,
+                            "value": null
+                        }
+                    }
+                ],
+                "tags": [
+                    "mandatory_free_shipping"
+                ],
+                "dimensions": null,
+                "local_pick_up": false,
+                "free_shipping": true,
+                "logistic_type": "xd_drop_off",
+                "store_pick_up": false
+            },
+            "international_delivery_mode": "none",
+            "seller_address": {
+                "city": {
+                    "id": "TUxBQkNBQjM4MDda",
+                    "name": "Caballito"
+                },
+                "state": {
+                    "id": "AR-C",
+                    "name": "Capital Federal"
+                },
+                "country": {
+                    "id": "AR",
+                    "name": "Argentina"
+                },
+                "search_location": {
+                    "neighborhood": {
+                        "id": "TUxBQkNBQjM4MDda",
+                        "name": "Caballito"
+                    },
+                    "city": {
+                        "id": "TUxBQ0NBUGZlZG1sYQ",
+                        "name": "Capital Federal"
+                    },
+                    "state": {
+                        "id": "TUxBUENBUGw3M2E1",
+                        "name": "Capital Federal"
+                    }
+                },
+                "id": 177946970
+            },
+            "seller_contact": null,
+            "location": {},
+            "coverage_areas": [],
+            "attributes": [
+                {
+                    "id": "BACKLIGHT_COLOR",
+                    "name": "Color de la luz de fondo",
+                    "value_id": "52028",
+                    "value_name": "Azul",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "52028",
+                            "name": "Azul",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "BRAND",
+                    "name": "Marca",
+                    "value_id": "-1",
+                    "value_name": null,
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "-1",
+                            "name": null,
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "DISPLAY_DIGITS_NUMBER",
+                    "name": "Cantidad de d\u00edgitos",
+                    "value_id": null,
+                    "value_name": "4",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "4",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "DISPLAY_LINES_NUMBER",
+                    "name": "Cantidad de l\u00edneas",
+                    "value_id": null,
+                    "value_name": "4",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "4",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "GTIN",
+                    "name": "C\u00f3digo universal de producto",
+                    "value_id": "-1",
+                    "value_name": null,
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "-1",
+                            "name": null,
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "ITEM_CONDITION",
+                    "name": "Condici\u00f3n del \u00edtem",
+                    "value_id": "2230284",
+                    "value_name": "Nuevo",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "2230284",
+                            "name": "Nuevo",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "MODEL",
+                    "name": "Modelo",
+                    "value_id": "-1",
+                    "value_name": null,
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "-1",
+                            "name": null,
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "TOTAL_HEIGHT",
+                    "name": "Altura total",
+                    "value_id": null,
+                    "value_name": "50 mm",
+                    "value_struct": {
+                        "number": 50,
+                        "unit": "mm"
+                    },
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "50 mm",
+                            "struct": {
+                                "number": 50,
+                                "unit": "mm"
+                            }
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "TOTAL_LENGTH",
+                    "name": "Largo total",
+                    "value_id": null,
+                    "value_name": "90 mm",
+                    "value_struct": {
+                        "number": 90,
+                        "unit": "mm"
+                    },
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "90 mm",
+                            "struct": {
+                                "number": 90,
+                                "unit": "mm"
+                            }
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "TOTAL_WIDTH",
+                    "name": "Ancho total",
+                    "value_id": null,
+                    "value_name": "25 mm",
+                    "value_struct": {
+                        "number": 25,
+                        "unit": "mm"
+                    },
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "25 mm",
+                            "struct": {
+                                "number": 25,
+                                "unit": "mm"
+                            }
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                }
+            ],
+            "warnings": [],
+            "listing_source": "",
+            "variations": [],
+            "status": "paused",
+            "sub_status": [
+                "out_of_stock"
+            ],
+            "tags": [
+                "brand_verified",
+                "good_quality_picture",
+                "good_quality_thumbnail",
+                "immediate_payment",
+                "cart_eligible"
+            ],
+            "warranty": "Sin garant\u00eda",
+            "catalog_product_id": null,
+            "domain_id": "MLA-LCD_DISPLAYS",
+            "parent_item_id": null,
+            "differential_pricing": null,
+            "deal_ids": [],
+            "automatic_relist": false,
+            "date_created": "2020-03-22T21:27:57.000Z",
+            "last_updated": "2020-07-28T20:41:47.631Z",
+            "health": 0.88,
+            "catalog_listing": false,
+            "channels": [
+                "marketplace"
+            ]
+        }
+    }
+]

@@ -63,40 +63,54 @@ def fill():
 
         lista_con_ids.append(x)
 
-    
-    lista_con_datos = []
 
 
     for i in lista_con_ids:
-        URL = "https://api.mercadolibre.com/items?ids="+i
-        response = requests.get(URL)
-        datos = response.json()
+        
+        with open ("MELI_SQL_ORM", "w") as jsonfile:
+            URL = "https://api.mercadolibre.com/items?ids="+i
+            response = requests.get(URL)
+            datos1 = response.json()
+            json.dump(datos1, jsonfile, indent = 4)
+            datos = datos1[0]["body"]
 
         try:
+            
             for x in datos:
+                
                 #datos_utiles = {"id":x["id"], "site_id":x["site_id"], "title":x["title"], "price":x["price"], "currency_id":x["currency_id"], "initial_quantity":x["initial_quantity"], "available_quantity":x["available_quantity"], "sold_quantity":x["sold_quantity"]}
-                datos_utiles = {x["id"], x["site_id"], x["title"], x["price"], x["currency_id"], x["initial_quantity"], x["available_quantity"], x["sold_quantity"]}
-                lista_con_datos.append(datos_utiles)
+                #datos_utiles = x["id"], x["site_id"], x["title"], x["price"], x["currency_id"], x["initial_quantity"], x["available_quantity"], x["sold_quantity"]
+                
+                id = x["id"]
+                site_id = x["site_id"]
+                title = x["title"]
+                price = x["price"]
+                currency_id = x["currency_id"]
+                initial_quantity = x["initial_quantity"]
+                available_quantity = x["available_quantity"]
+                sold_quantity = x["sold_quantity"]
 
+                dataset = [(id, site_id, title, price, currency_id, initial_quantity, available_quantity, sold_quantity)]
+
+                #dataset = [{i["id"]}, {i["site_id"]}, {i["title"]}, {i["price"]}, {i["currency_id"]}, {i["initial_quantity"]}, {i["available_quantity"]}, {i["sold_quantity"]}]
+
+                
+                
+                conn = sqlite3.connect('MELI.db')
+
+                c = conn.cursor()
+
+                c.executemany   ("""INSERT INTO DatosMendoza (id, site_id, title, price, currency_id, initial_quantity, available_quantity, sold_quantity)
+                                VALUES (?,?,?,?,?,?,?,?);""", dataset)
+
+                conn.commit()
+
+        
+        
         except:
             continue
         
     print ("Agarre de datos importantes finalizado")
-
-    conn = sqlite3.connect('MELI.db')
-
-    c = conn.cursor()
-
-    
-    for i in lista_con_datos:
-
-        dataset = [{i["id"]}, {i["site_id"]}, {i["title"]}, {i["price"]}, {i["currency_id"]}, {i["initial_quantity"]}, {i["available_quantity"]}, {i["sold_quantity"]}]
-
-        c.executemany   ("""INSERT INTO DatosMendoza (id, site_id, title, price, currency_id, initial_quantity, available_quantity, sold_quantity)
-                        VALUES (?,?,?,?,?,?,?,?);""", dataset)
-    
-    
-    conn.commit()
 
     c.execute('SELECT * FROM DatosMendoza')
     
