@@ -124,6 +124,29 @@ def fill():
     print("Relleno de la tabla finalizado")
 
 
+def fetch():
+    
+    print('Ingrese el ID que desea obtener')
+    dataw = input()
+
+    conn = sqlite3.connect('MELI.db')
+    c = conn.cursor()
+
+    
+    try:
+        c.execute('SELECT * FROM DatosMendoza WHERE id = ?', [dataw])
+
+        dataw_servido = c.fetchone()
+        print(dataw_servido)
+    except:
+        print('No se encontro ese ID')
+
+    print('Programa Finalizado con exito')
+    
+
+    
+
+
 
 
 
@@ -135,3 +158,4 @@ if __name__ == "__main__":
 
     fill()
 
+    fetch()
